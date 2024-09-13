@@ -1,0 +1,70 @@
+/* Step 2: Skip to Main Content Link */
+  .skip-link {
+    position: absolute;
+    margin-top: 1px;
+    right: 0px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .skip-link:focus {
+    top: 0;
+    left: 0;
+  }
+
+  header {
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    top: 0;
+  }
+
+  h1 {
+    margin-top: 130px;
+  }
+  
+  /* Step 4: Navigation */
+  nav {
+    display: inline-block;
+    width: 80%;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  nav img {
+    width: 10%;
+  }
+  
+  /* Step 6: Grid */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 20px;
+  }
+  
+  .grid img {
+    width: 100%;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  
+  /* Step 9: Flex */
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  
