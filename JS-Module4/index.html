@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Environmental Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="setTabFocus()">
+    <div class="container">
+        <h1>Environmental Protection Gallery</h1>
+        <div id="image" class="image-display" style="width: 840px;">
+            Hover over an image below to display here.
+        </div>
+
+        <div class="image-gallery">
+            <img src="./assets/image/forest.jpg" alt="Lush Forest" class="previewPic" 
+                onmouseover="upDate(this)" onmouseout="undo()" 
+                onfocus="upDate(this)" onblur="undo()" tabindex="0">
+            <img src="./assets/image/ocean.jpg" alt="Clean Ocean" class="previewPic" 
+                onmouseover="upDate(this)" onmouseout="undo()" 
+                onfocus="upDate(this)" onblur="undo()" tabindex="0">
+            <img src="./assets/image/wildlife.jpg" alt="Wildlife Preservation" class="previewPic" 
+                onmouseover="upDate(this)" onmouseout="undo()" 
+                onfocus="upDate(this)" onblur="undo()" tabindex="0">
+            <img src="./assets/image/recycling.jpg" alt="Recycling Efforts" class="previewPic" 
+                onmouseover="upDate(this)" onmouseout="undo()" 
+                onfocus="upDate(this)" onblur="undo()" tabindex="0">
+            <img src="./assets/image/solar.jpg" alt="Solar Energy" class="previewPic" 
+                onmouseover="upDate(this)" onmouseout="undo()" 
+                onfocus="upDate(this)" onblur="undo()" tabindex="0">
+            <img src="./assets/image/wind.jpg" alt="Wind Power" class="previewPic" 
+                onmouseover="upDate(this)" onmouseout="undo()" 
+                onfocus="upDate(this)" onblur="undo()" tabindex="0">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
