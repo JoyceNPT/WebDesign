@@ -1,64 +1,73 @@
-/* Base Styles (Mobile-First) */
+/* General Body Styles */
 body {
+    background-color: #dedede;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
-header, footer {
-    background-color: #f4f4f4;
+/* Header Styles */
+h1 {
     text-align: center;
-    padding: 20px 0;
+    font-size: 32px;
 }
 
-main {
-    padding: 20px;
+/* Anchor Tag Styles */
+a {
+    color: #000;
+    text-decoration: none;
 }
 
-/* Container for div elements */
-main > div {
+/* Paragraph Styles */
+p {
+   font-size: 25px;
+   text-align: center;
+}
+
+/* Image Styles */
+img {
     width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    text-align: center;
 }
 
-/* Responsive Images */
-main img {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
+div img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
 }
 
-/* Flexbox Layout for Larger Screens */
-@media (min-width: 500px) {
-    main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    main > div {
-        /* Adjustments for Flexbox */
-    }
+/* Div Styles */
+div {
+    display: inline-block;
+    width: 24%;
+    margin: 5px;
+    padding: 2px;
 }
 
-/* First Media Query: Trigger at 772px */
-@media (min-width: 772px) {
-    main > div {
-        width: 45%; /* 45% of viewport width */
-    }
-
-    main img {
-        max-height: 30vh; /* 30% of viewport height */
-        object-fit: cover; /* Ensure images cover the area without distortion */
-    }
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: center;
 }
 
-/* Second Media Query: Trigger at 998px */
-@media (min-width: 998px) {
-    main > div {
-        width: 30%; /* 30% of viewport width */
-    }
+/* Optional Hover Button Styles */
+.button {
+    display: inline-block;
+    border: 2px solid #000;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.button:hover {
+    background-color: #fff;
+}
+
+/* Optional Hover Label for Images */
+.label {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+.child:hover .label {
+    display: block;
 }
