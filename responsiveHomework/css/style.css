@@ -22,24 +22,37 @@ p {
    text-align: center;
 }
 
-/* Image Styles */
+/* Default Image Styles for Mobile */
 img {
     width: 100%;
+    max-height: auto;
 }
 
-div img {
-    width: 150px;
-    height: 150px;
-    display: block;
-    margin: auto;
-}
-
-/* Div Styles */
+/* Default Div Styles for Mobile */
 div {
-    display: inline-block;
-    width: 24%;
-    margin: 5px;
-    padding: 2px;
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+}
+
+/* First media query for 772px */
+@media all and (min-width: 772px) {
+    div {
+        width: 45%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    img {
+        max-height: 30vh; /* 30% of the viewport height */
+    }
+}
+
+/* Second media query for 998px */
+@media all and (min-width: 998px) {
+    div {
+        width: 30%;
+    }
 }
 
 /* Footer Styles */
